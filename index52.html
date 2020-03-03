@@ -3,23 +3,23 @@
     <title>Самостоятельная работа </title>
 <script>
   function open1() {
-      var OpenWindow = window.open('', 'newwin', config = 'height=300, width=500');
-      OpenWindow.document.write("<html>");
-      OpenWindow.document.write("<title>Новое окно</title>");
-      OpenWindow.document.write("<body BGCOLOR='#0000FF'>");
-      OpenWindow.document.write("<center>");
-      OpenWindow.document.write("<font size=+3>Наше новое окно</font><p>");
-      OpenWindow.document.write("<a href='http://izi.vlsu.ru' target='main'> Эта ссылка<br> откроется в основном окне</a><p>");
-
-      OpenWindow.document.write("<p><HR WIDTH='60%'><p>");
-
-      OpenWindow.document.write("<a href='' onClick='self.close()'> Эта сслыка закроет окно</a><p>");
-      
-            OpenWindow.document.write("</center>");
-            OpenWindow.document.write("</html>");
+      var OpenWin = window.open('', 'newwin', config='height=300,width=500,left=100,top=150,status=yes,location=yes,toolbar=no,menubar=yes');
+      OpenWin.document.write("<html>");
+      OpenWin.document.write("<title>Новое окно</title>");
+      OpenWin.document.write("<body style='color:white' BGCOLOR = 'blue'>");
+      OpenWin.document.write("<center>");
+      OpenWin.document.write("<font size=+3>Наше новое окно</font><p>");
+      OpenWin.document.write("<a style='color:white' href = 'http://www.exam.by' target = 'main'>Эта ссылка откроется в новом окне</a></p>");
+      OpenWin.document.write("<a style='color:white' href = 'http://www.intuit.ru' target = 'main'>Эта ссылка ведёт на сайт intuit.ru</a></p>");
+      OpenWin.document.write("<a style='color:white' href = 'https://metanit.com' target = 'main'>Эта ссылка ведёт на сайт metanit.com</a></p>");
+      OpenWin.document.write("<p><HR WIDTH = '60%'><p>");
+      OpenWin.document.write("<a style='color:white' href = '' onClick = 'self.close()'>Эта ссылка закроет окно</a></p>");
+      OpenWin.document.write("</center>");
+      OpenWin.document.write("</body></html>");
   }
 </script>
 <body>
         <button onclick="open1()">Запуск страницы в новом окне</button>
 </body>
 </html>
+
